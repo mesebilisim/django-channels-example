@@ -32,7 +32,7 @@ def first_task():
     """
     print('first_task')
 
-    from django_channels_example.example.consumers import send_msg
+    from example.consumers import send_msg
 
     send_msg()
 
