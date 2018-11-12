@@ -34,4 +34,4 @@ def gonder():
             'msg': str(random.randint(0, 999)),
         })
 
-# celery -A example_channels worker -B -l info -n worker_example
+# celery -A django_channels_example worker -B -l info -n django_channels_example

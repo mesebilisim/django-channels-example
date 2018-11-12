@@ -14,3 +14,9 @@ Check out the [blog post](https://mesebilisim.com/).
 4. Apply the migrations
 5. Install Redis (if necessary)
 6. Run the server
+
+## Example
+
+.. figure:: example.png
+    :align: center
+    

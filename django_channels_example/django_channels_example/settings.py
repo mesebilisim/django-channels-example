@@ -111,7 +111,7 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = TIME_ZONE
 
 
-ASGI_APPLICATION = "example_channels.routing.application"
+ASGI_APPLICATION = "django_channels_example.routing.application"
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
