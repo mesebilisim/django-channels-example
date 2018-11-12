@@ -1,0 +1,7 @@
+django
+channels
+celery
+asgi-redis==1.0.0
+asgiref
+daphne
+redis==2.10.5
