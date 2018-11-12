@@ -4,7 +4,6 @@ import os
 
 from celery import Celery
 
-
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_channels_example.settings')
 
 app = Celery('django_channels_example_celery')
@@ -17,7 +16,7 @@ app.autodiscover_tasks()
 @app.on_after_configure.connect
 def setup_periodic_tasks(sender, **kwargs):
     """
-    Proje basladiginda zamanlanmis gorevler calissin
+    First Start Task
     :param sender:
     :param kwargs:
     :return:
@@ -28,13 +27,13 @@ def setup_periodic_tasks(sender, **kwargs):
 @app.task
 def first_task():
     """
-    Periyodik gorev
+    Periodic Task
     :return:
     """
-    print('birinci_gorev')
+    print('first_task')
 
-    from example.consumers import gonder
+    from django_channels_example.example.consumers import send_msg
 
-    gonder()
+    send_msg()
 
 

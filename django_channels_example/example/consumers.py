@@ -24,7 +24,7 @@ class TestConsumer(WebsocketConsumer):
         self.send(json.dumps(message))
 
 
-def gonder():
+def send_msg():
     channel_layer = channels.layers.get_channel_layer()
 
     async_to_sync(channel_layer.group_send)(
