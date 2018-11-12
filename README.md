@@ -17,6 +17,6 @@ Check out the [blog post](https://mesebilisim.com/).
 
 ## Example
 
-.. figure:: example.png
-    :align: center
-    
+![Image of Example](example.png)
+
+
