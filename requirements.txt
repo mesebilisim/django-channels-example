@@ -15,7 +15,7 @@ coreschema==0.0.4
 daphne==2.2.3
 defusedxml==0.5.0
 dj-static==0.0.6
-Django==2.1.2
+Django==2.2.24
 django-chartit==0.2.9
 django-cors-headers==2.4.0
 django-docs==0.3.0
